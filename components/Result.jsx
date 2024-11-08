@@ -8,12 +8,12 @@ export default function Result() {
     const total = selectedNumbers.reduce((acc, num) => acc + num, 0)
 
   return (
-    <div>
+    <div className='resultContainer'>
       <h2>Resultado:</h2>
       <p>Números seleccionados: {selectedNumbers.join(', ')}</p>
-      <p>{total}</p>
+      <p className='resultTotal'>{total}</p>
+      <button className='reset' onClick={reset}>Reset</button>
       <Link to={'/'}>Volver a la calculadora</Link>
-      <button onClick={reset}>Reset</button>
     </div>
   )
 }

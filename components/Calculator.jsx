@@ -30,7 +30,7 @@ export default function Calculator() {
             <button className='zero' onClick={handleButton} value="0">0</button>
         </div>
         <div>
-            <Link to={'/result'}>Resultado</Link>
+            <Link className='resultBtm' to={'/result'}>Resultado</Link>
         </div>
     </>
   )
